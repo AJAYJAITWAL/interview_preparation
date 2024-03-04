@@ -1,0 +1,21 @@
+
+# Difference between ==, ===, eql?, and equal?
+
+# == example
+1 == 1.0 # true
+"hello" == "HELLO".downcase # true
+
+# === example
+(1..10) === 5 # true
+/^[a-z]+$/ === "hello" # true
+
+# eql? example
+1.eql?(1.0) # false
+"hello".eql?("hello") # true
+
+# equal? example
+a = "hello"
+b = "hello"
+a.equal?(b) # false
+c = a
+a.equal?(c) # true

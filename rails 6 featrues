@@ -1,0 +1,17 @@
+1. Action Mailbox:
+Action Mailbox is a significant addition to Rails 6 that simplifies the handling of inbound emails. It allows developers to build applications that can directly receive and process incoming emails. With Action Mailbox, you can create automated email processing workflows, such as converting emails into comments or forum posts. This feature streamlines email integration and makes it easier to build robust applications with email capabilities.
+
+2. Action Text:
+Action Text is another powerful addition to Rails 6, offering rich-text editing capabilities. It integrates the Trix editor into Rails and provides a seamless way to handle rich content in applications. Action Text enables users to format text, embed images and videos, and create links, all in a user-friendly interface. With this feature, developers can effortlessly incorporate rich-text functionality into their applications, enhancing the user experience.
+
+3. Multiple Database Support:
+Rails 6 introduces native support for multiple databases within a single application. This enhancement allows developers to configure models to connect with different databases, facilitating the development of applications that utilize multiple data sources. Whether you’re building a microservices architecture or need to integrate with external systems, Rails 6 makes it easier to manage and query data from diverse databases.
+
+4. Parallel Testing:
+Rails 6 brings parallel testing capabilities, enabling developers to execute test suites in parallel. This feature significantly reduces the time required for running tests, especially in large applications with extensive test suites. Parallel testing enhances developer productivity by allowing them to obtain faster feedback and accelerate the testing process.
+
+5. Action Cable Enhancements:
+Action Cable, the built-in WebSocket framework of Rails, receives notable improvements in version 6. It now supports multiple databases, allowing developers to scale real-time applications across different database backends seamlessly. Additionally, Action Cable now supports direct JavaScript module imports, simplifying the integration of client-side JavaScript code with the server-side application.
+
+6. Zeitwerk Autoloader:
+Rails 6 introduces the Zeitwerk autoloader as the default autoloading mechanism, replacing the classic “require” approach. The Zeitwerk autoloader provides a more reliable and efficient autoloading solution, reducing the chances of subtle bugs and improving overall application performance. This change brings enhanced code reliability and simplifies the development process.

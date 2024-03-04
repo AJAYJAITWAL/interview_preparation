@@ -1,0 +1,17 @@
+# APM tools
+
+1. newrelic_rpm
+2. airbrake
+3. Elastic APM
+
+Rails APM (Application Performance Monitoring) tools help developers monitor, diagnose, and optimize the performance of their Ruby on Rails applications. Here are some of the popular Rails APM tools:
+
+# New Relic: New Relic offers comprehensive APM solutions for Rails applications, including real-time monitoring, error tracking, transaction tracing, and performance analysis. It provides detailed insights into application performance, database queries, external services, and more.
+
+# AppSignal: AppSignal is a lightweight APM tool designed specifically for Ruby on Rails applications. It offers performance monitoring, error tracking, and host metrics, along with features like custom metrics, distributed tracing, and deploy tracking.
+
+# ScoutAPM: ScoutAPM provides performance monitoring and insights for Rails applications, with features such as request tracing, database query analysis, background job monitoring, and error tracking. It offers detailed performance reports and recommendations for optimizing application performance.
+
+# Datadog: Datadog offers APM solutions for Rails applications, with features like distributed tracing, request profiling, error tracking, and anomaly detection. It provides real-time visibility into application performance and integrates with other monitoring tools and services.
+
+# Stackify Retrace: Stackify Retrace is an APM tool that offers performance monitoring, error tracking, and log management for Rails applications. It provides insights into application performance, database queries, external dependencies, and more, helping developers identify and resolve performance issues.

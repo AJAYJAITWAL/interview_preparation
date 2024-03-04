@@ -1,0 +1,26 @@
+# Duck typing
+
+Duck typing in Ruby refers to the practice of treating objects based on their behavior rather than their class or type. If an object responds to certain methods, it can be treated as if it belongs to a specific type. Here are some simple examples of duck typing in Ruby:
+
+# Example:-
+
+class Duck
+  def quack
+    puts "Quack!"
+  end
+end
+
+class Dog
+  def quack
+    puts "Woof!"
+  end
+end
+
+def make_sound(animal)
+  animal.quack
+end
+
+duck = Duck.new
+dog = Dog.new
+
+make_sound(duck) # Output: Quack!

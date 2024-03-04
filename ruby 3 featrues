@@ -1,0 +1,51 @@
+# Ruby 3 major updates
+
+1. Ruby 3 performance
+One of the major focuses for Ruby 3 was the performance. In fact, the initial discussion for Ruby 3 was started around it. Matz had set a very ambitious goal of making Ruby 3 times faster.
+
+# CPU optimization
+
+# Memory optimization
+
+# Automatic Garbage Compaction
+
+# Objects Grouping
+
+2. Parallelism and Concurrency in Ruby 3
+
+Concurrency is one of the important aspects of any programming language. Matz feels that Threads are not the right level of abstraction for Ruby programmers to use.
+
+# Fibers
+
+# Fiber Scheduler
+
+3. Static Analysis
+
+We need tests to ensure correctness of our program. However by its very nature tests could mean code duplication.
+
+4. One-line pattern matching syntax change
+
+Previously one-line pattern matching used the keyword in. Now it's replaced with =>.
+
+Ruby 2.7
+  { name: 'John', role: 'CTO' } in {name:}
+  p name # => 'John'
+
+Ruby 3.0
+  { name: 'John', role: 'CTO' } => {name:}
+  p name # => 'John'
+
+
+5. Endless Method definition
+This is another syntax enhancement that is optional to use. It enables us to create method definitions without end keyword.
+
+def: increment(x) = x + 1
+
+p increment(42) #=> 43
+
+6. Except method in Hash
+Sometimes while working on a non Rails app I get undefined method except. The except method was available only in Rails. In Ruby 3 Hash#except was added to Ruby itself.
+
+user = { name: 'Oliver', age: 29, role: 'CTO' }
+
+user.except(:role) #=> {:name=> "Oliver", :age=> 29}

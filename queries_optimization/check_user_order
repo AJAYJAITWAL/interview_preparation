@@ -1,0 +1,44 @@
+
+### Write an Active Record query to find all users who have placed an order with amount greater than the average order amount.
+
+# Active record query
+User.joins(:orders).group("users.id").having("AVG(orders.amount) < ? ", Order.average(:amount))
+
+# Sql query
+SELECT * from users INNER JOIN orders ON users.id = orders.user_id 
+GROUP BY user.id 
+HAVING AVG(orders.amount) > SELECT AVG(amount) from orders
+
+
+
+Suppose we have two tables, "customers" and "orders". The "customers" table has columns "customer_id", "name", and "email". The "orders" table has columns "order_id", "customer_id", "order_date", and "total_amount".I want to find out all the customers whose total amount is more than 10000 rs.
+Select name
+Left join and Inner join what is difference?
+Total amount > 10000 and total order count is less than 10
+Find the customers who have placed less than 10 orders
+
+
+1. Customer.joins(:orders)
+        .select('customers.name')
+        .where('orders.total_amount > ?', 10000)
+
+
+2. Customer.joins(:orders)
+        .select('customers.name')
+        .group('customers.id')
+        .having('SUM(orders.total_amount) > ?', 10000)
+        .having('COUNT(orders.id) < ?', 10)
+
+        or
+
+  Customer.joins(:orders)
+  .select('customers.name')
+  .group('customers.id')
+  .having('SUM(orders.total_amount) > ? AND COUNT(orders.id) < ?', 10000, 10)
+
+
+3. Customer.left_joins(:orders)
+        .select('customers.name')
+        .group('customers.id')
+        .having('COUNT(orders.id) < ?', 10)
+

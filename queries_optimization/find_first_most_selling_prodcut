@@ -1,0 +1,11 @@
+We have three model to write the query for that and get the most selling product 
+
+1. Products
+2. Orders
+3. OrderItems
+
+SELECT p.product_name FROM product p
+JOIN order_item oi ON p.product_id =  oi.product_id
+JOIN order o ON oi.order_id = o.order_id
+GROUP BY p.product_name
+ORDER BY COUNT(oi.order_item_id) DESC limit 1;

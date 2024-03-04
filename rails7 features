@@ -1,0 +1,31 @@
+1. Performance Enhancements:
+
+Rails 7 introduces several performance enhancements that make your applications faster and more efficient. Notable improvements include the introduction of JIT (Just-in-Time) compilation, which optimizes Ruby code execution, resulting in improved performance. Additionally, Rails 7 allows for parallel testing, leveraging multiple CPU cores to reduce test suite execution time. Faster boot time is another notable improvement, enhancing the overall development experience.
+
+2. Webpacker as Default JavaScript Compiler:
+
+Rails 7 takes it a step further by making Webpacker the default JavaScript compiler, replacing the previously used Sprockets. This change provides a more modern and flexible approach to managing JavaScript assets, allowing for a seamless integration of JavaScript frameworks like React or Vue.js.
+
+3. Encrypted Credentials by Default:
+
+Rails 7 makes encrypted credentials the default way to store sensitive information, such as API keys and database passwords. This change enhances security by encrypting credentials and separating them from the source code. With encrypted credentials, you can easily share your codebase without exposing sensitive information. It simplifies the deployment process and allows for easier collaboration among team members.
+
+4. Improved Error Handling:
+
+Rails 7 introduces a new error handling framework called Actionable Errors. This framework provides a standardized way to handle and present errors to users, making error messages more informative and actionable. With Actionable Errors, developers can easily identify the root cause of issues and provide users with clear instructions on how to resolve them. This feature improves the overall user experience and helps developers troubleshoot and fix issues more efficiently.
+
+5. Rich Text Editing:
+
+Rails 7 introduces a new Action Text editor called Trix, which provides a rich text editing experience. With Trix, users can format text, add images, embed videos, and more. This feature simplifies the process of building content-rich applications, such as blogs, forums, or CMS platforms. It eliminates the need for third-party plugins or integrations, making it easier to create and manage dynamic content within your Rails application.
+
+6. Multi-DB Improvements:
+
+Rails 7 brings enhancements to multi-database support. It introduces a new API for managing multiple databases, making it easier to work with multiple data sources within a single Rails application. This feature is particularly useful for applications that need to interact with multiple databases or microservices. With the improved multi-DB support, developers can seamlessly connect and query data from different sources, enhancing the scalability and flexibility of their applications.
+
+7. Enhanced Testing Framework:
+
+Rails 7 enhances the testing framework with new features and improvements. System testing has been improved with the introduction of system test helpers, making it easier to write and maintain system tests. Additionally, Rails 7 introduces TestProf, a test fixtures replacement that provides a more efficient and scalable way to manage test data. These enhancements streamline the testing process, allowing developers to write robust and reliable tests with ease.
+
+8. Other Notable Changes:
+
+Rails 7 fully supports Ruby 3.0, taking advantage of its new features and performance improvements. It also removes several deprecated features and methods, ensuring a cleaner and more streamlined codebase. By embracing the latest Ruby version and removing deprecated elements, Rails 7 encourages developers to adopt best practices and maintain up-to-date codebases.
